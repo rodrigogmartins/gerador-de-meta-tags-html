@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/animations.css">
+        <title>Gerador de metatags HTML</title>
+    </head>
+    <body>
+        <div class="content">
+            <div id="header">
+                <div id="settings">
+                    <form action="#" class="input-row">
+                        <div class="input-group">
+                            <label for="autor">Autor</label>
+                            <input name="autor" id="autor" spellcheck="false" />
+                        </div>
+                        <div class="input-group">
+                            <label for="appname">Nome da aplicação</label>
+                            <input name="appname" id="appname" spellcheck="false" />
+                        </div>
+                        <div class="input-group">
+                            <label for="tema">Tema</label>
+                            <input type="color" value="#8be9fd" name="tema" id="tema" spellcheck="false" />
+                        </div>
+                        <div class="input-group">
+                            <label for="miniatura">Url miniatura</label>
+                            <input name="miniatura" id="miniatura" spellcheck="false" />
+                        </div>
+                        <div class="input-group">
+                            <label for="robots">Robots</label>
+                            <select class="input-element" name="robots" id="robots">
+                                <option value="" selected>Escolha...</option>
+                                <option value="index, follow">Rastrear todas as páginas e indexá-los</option>
+                                <option value="index, nofollow">Rastrear está página, mas não rastrear as outras</option>
+                                <option value="noindex, follow">Rastrear cada página, mas não indexar</option>
+                                <option value="noindex, nofollow">Não rastrear outras páginas nem índice desta página</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="novas-visitas">Novas visitas</label>
+                            <select class="input-element" name="novasVisitas" id="novas-visitas">
+                                <option value="" selected>Escolha...</option>
+                                <option value="1 day">Todos os dias</option>
+                                <option value="7 day">A cada 7 dias</option>
+                                <option value="14 day">A cada 14 dias</option>
+                                <option value="1 month">A cada mês</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="charset">Charset</label>
+                            <select class="input-element" name="charset" id="charset">
+                                <option value="" selected>Escolha...</option>
+                                <option value="UTF-8">UTF-8</option>
+                                <option value="ISO-8859-1">ISO-8859-1</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="gerador">Gerador</label>
+                            <select class="input-element" name="gerador" id="gerador">
+                                <option value="" selected>Escolha...</option>
+                                <option value="N/A">HTML</option>
+                                <option value="WordPress">WordPress</option>
+                                <option value="Dreamweaver">Dreamweaver</option>
+                                <option value="EditPlus">EditPlus</option>
+                                <option value="Frontpage">Frontpage</option>
+                                <option value="Joomla">Joomla</option>
+                                <option value="N/A">Outro</option>
+                                <option value="N/A">Desconhecido</option>
+                            </select>
+                        </div>
+                    </form>
+                    <div class="container-textareas">
+                        <div class="input-group">
+                            <label for="titulo">Título</label>
+                            <textarea name="titulo" id="titulo" spellcheck="false"></textarea>
+                            <span><strong id="title-chars">0</strong> caracteres. (Sugestão: 90)</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="description">Description</label>
+                            <textarea name="description" id="description" spellcheck="false"></textarea>
+                            <span><strong id="description-chars">0</strong> caracteres. (Sugestão: 160)</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="keywords">Keywords</label>
+                            <textarea name="keywords" placeholder="Palavras separadas por virgula ou quebra de linha" id="keywords" spellcheck="false"></textarea>
+                            <span><strong id="keywords-chars">0</strong> caracteres. (Sugestão: 200) </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container-items">
+                    <div id="meta-title"></div>
+                    <div id="meta-description"></div>
+                    <div id="meta-keyword"></div>
+                    <div id="meta-autor"></div>
+                    <div id="meta-nome"></div>
+                    <div id="meta-tema"></div>
+                    <div id="meta-miniatura"></div>
+                    <div id="meta-robos"></div>
+                    <div id="meta-visitas"></div>
+                    <div id="meta-charset"></div>
+                    <div id="meta-gerador"></div>
+                </div>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
