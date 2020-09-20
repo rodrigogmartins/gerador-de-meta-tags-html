@@ -1,0 +1,16 @@
+{
+  "name": "meta-tags-generator",
+  "version": "1.0.0",
+  "description": "Apenas um gerador de meta tags HTML para facilitar na criação de páginas HTML com uma qualidade maior em menos tempo.",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigogmartins/gerador-de-meta-tags-html.git"
+  },
+  "keywords": [
+    "gerador de meta tags",
+    "meta tags html"
+  ],
+  "author": "Rodrigo Martins",
+  "license": "MIT"
+}
